@@ -86,7 +86,7 @@ If the installation was successful, you should be able to run the following comm
 ## Test with Postman
 If the importing with [postman collection for the finished API](postman_collection.json) was successful, you could be able to run some APIs to try somethings you need
 
-Note: If you get Forbidden error, you must run API `http://localhost:5000/api/v1/sessions` first to get `accessToken` and `refreshToken`
+Note: If you get Forbidden error, you are required to create a new account using the API POST `http://localhost:5000/api/v1/users` first. Next, you must run API `http://localhost:5000/api/v1/sessions` with `email` and `password` to get `accessToken` and `refreshToken`
 
 Then copy `accessToken` and `refreshToken` and paste it into the `Headers` of the request with the following pair of values:
 | KEY           | VALUE                   |
